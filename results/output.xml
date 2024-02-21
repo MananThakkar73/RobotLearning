@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.5 on darwin)" generated="2024-02-10T15:25:01.721476" rpa="false" schemaversion="5">
+<suite id="s1" name="Robottutorial" source="/Users/mt00821132/PycharmProjects/RobrtFramework/robottutorial.robot">
+<test id="s1-t1" name="This is the Sample test case" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-10T15:25:01.881646" level="INFO">Opening browser 'chrome' to base url 'https://app.spruce-dev.com/login'.</msg>
+<arg>https://app.spruce-dev.com/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-10T15:25:01.881448" elapsed="9.465616"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>username</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-10T15:25:11.347739" elapsed="1.283713"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-10T15:25:12.631922" level="INFO">Typing text 'lsspl.sprucepatient+devadmin1@gmail.com' into text field 'username'.</msg>
+<arg>username</arg>
+<arg>lsspl.sprucepatient+devadmin1@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-10T15:25:12.631715" elapsed="0.212055"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-02-10T15:25:12.844266" level="INFO">Typing password into text field 'password'.</msg>
+<msg time="2024-02-10T15:25:12.869001" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>password</arg>
+<arg>asdf12</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-10T15:25:12.844030" elapsed="0.066316"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-10T15:25:12.910840" level="INFO">Clicking button 'Log In'.</msg>
+<arg>Log In</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-10T15:25:12.910618" elapsed="0.072557"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>inbox</arg>
+<arg>15</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-10T15:25:12.983537" elapsed="2.750408"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-10T15:25:15.734741" level="INFO">DROPDOWNLIST</msg>
+<arg>${robot}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-10T15:25:15.734579" elapsed="0.000215"/>
+</kw>
+<var name="${robot}">DROPDOWNLIST</var>
+<status status="PASS" start="2024-02-10T15:25:15.734425" elapsed="0.000420"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-10T15:25:15.735181" level="INFO">//div[@class='css-19isju1']</msg>
+<arg>${robot}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-10T15:25:15.735056" elapsed="0.000171"/>
+</kw>
+<var name="${robot}">//div[@class='css-19isju1']</var>
+<status status="PASS" start="2024-02-10T15:25:15.734952" elapsed="0.000322"/>
+</iter>
+<var>${robot}</var>
+<value>@{ROBOTS}</value>
+<status status="PASS" start="2024-02-10T15:25:15.734129" elapsed="0.001189"/>
+</for>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-10T15:25:15.735461" elapsed="0.100697"/>
+</kw>
+<doc>spruce-robot test</doc>
+<tag>regression</tag>
+<status status="PASS" start="2024-02-10T15:25:01.880668" elapsed="13.955735"/>
+</test>
+<status status="PASS" start="2024-02-10T15:25:01.722434" elapsed="14.114486"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">regression</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robottutorial">Robottutorial</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
